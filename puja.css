@@ -65,7 +65,7 @@ a:hover{
 	margin: auto;
 }
 .banner{
-	background: url('img/puja.jpg') no-repeat;
+	background: url('puja.jpg') no-repeat;
 	background-size: cover;
 	position: relative;
 	z-index: 1;
