@@ -1,61 +1,44 @@
-@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
-
-label{
-  position: relative;
-  display: inline-block;
-  background-color: #fff;
-  padding: 5px 12px;
-  transition: all 1s ease;
-  border-radius: 0;
-  box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-  &::after{
-    content: '';
-    display: block;
-    height: 2px;
-    width: 80%;
-    background-color: #F0AD4E;
-    transition: all 1s ease 0.5s;
-  }
-  input{
-    transition: width 1s ease, opacity 0.5s ease 0.5s;
-    opacity: 1;
-    width: 180px;
-    height: 25px;
-    border: 0;
-    outline: none;
-    color: darken(#F0AD4E, 25)
-  }
-  i{
-    position: absolute;
-    top: 11px;
-    right: 11px;
-    color: #333;
-    cursor: pointer;
-  }
-  &[data-state="close"]{
-    border-radius: 30px;
-    padding: 5px 5px;
-     transition: all 1s ease;
-    &::after{
-      width: 0%;
-      transition: all 0.3s ease;
-    }
-    i{
-      pointer-events: none;
-    }
-    input{
-      width: 28px;
-      height: 25px;
-      opacity:0;
-      cursor: pointer;
-      transition: opacity 0.5s ease, width 1s ease;
-      -webkit-appearance:none
-    } 
-  }
+*{
+	margin: 0;
+	padding: 0;
 }
 body{
 	background-color: #F0F0F0 !important;
 }
+.dropbtn {
+  color: #424242;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  background-color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ffffff;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ffffff;}
+
 
 .navbar-default {
 
@@ -86,7 +69,7 @@ body{
 }
 
 .tention{
-	background: url('2.jpg');
+	background: url('https://images.standardnews.com/wp-content/uploads/2018/11/26194650/forbidden-places-15.jpg?tr=w-600,dpr-1,c-at_max');
 	background-repeat:no-repeat;
 	background-size: cover;
 	height: 76vh;
@@ -158,6 +141,11 @@ body{
 		padding-top: 2px;
 		padding-bottom: 7px;
 	}
+	.ppclear{
+		clear: both;
+		padding-top: 60px;
+		padding-bottom: 7px;
+	}
 .footfav{
 	background: #337ab7;
 	padding-top: 50px;
@@ -179,4 +167,29 @@ body{
     font-size: 16px;
     font-weight: 500;
     text-transform: uppercase;
+}
+/*End of home page*/
+/*Start of culture page*/
+.pcul1{
+	background: #ffffff;
+	
+}
+.pcul h3{
+	color: #337ab7;
+	margin-top: 20px;
+    
+    font-size: 24px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+.pcul p{
+	color: #000;
+}
+.culbtn{
+	position: absolute;
+	content: '';
+	top: 240px;
+	left: 3px;
 }
