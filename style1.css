@@ -6,7 +6,7 @@
 }
 
 .backgrond{
-	  background: url("../img/homepag.jpg");
+	  background: url("../homepag.jpg");
 	  background-size: cover;
 	  min-height: 1250px;
 }
