@@ -4,39 +4,59 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+body{
+	font-family: 'Honey Script', sans-serif;
+}
+@font-face {
+    font-family: 'Honey Script';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Honey Script'), url('https://fonts.cdnfonts.com/s/199/HoneyScript-Light.woff') format('woff');
+}
+.container-fluid {
+   max-width:1200px;
+}
 .backgrond{
 	  background: url("../homepag.jpg");
 	  background-size: cover;
 	  min-height: 1250px;
 }
+.headh{
+	max-height: 186px !important;
+}
 .bc1{
 	font-family: [HoneyScript];
 }
 .banner{
-height: 180px;
+height: auto;
 
 }
 .btext{
 	
 	color: #ffffff;
 	font-size: 17px;
-	font-weight: 600;
-	padding: 64px 0 0 70px !important;
+	font-weight: bold;
+	width: 300px;
+	/*padding: 64px 0 0 70px !important;*/
+	padding: 44px 0 0 0 !important;
 }
 .paris{
 	
-	padding: 7px 100px 0 0 !important;
+	padding: 4px 30px 5px 0 !important;
 }
 .contact{
 	width: 300px !important;
-	padding: 40px 0 0 80px !important;
+	padding: 20px 0 0 40px !important;
+}
+.votre{
+	padding: -10px 0 30px 0 !important;
 }
 .flag{
-	padding: 47px 0 0 10px !important;
+	/*width: 100px !important;*/
+	padding: 40px 0 0 0 !important;
 }
 .justify-content-center1 {
-	padding-left: 480px !important;
+	padding-left: 80px !important;
 }
 .navbar-inverse{
 	background: #080808 !important;
